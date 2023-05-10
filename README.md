@@ -38,3 +38,5 @@ In this repository, we currently have 3 examples to show, click on each to be di
 - [Example 1: Sentence similarity pairs](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20pairs/README.md#example-1-sentence-similarity-pairs)
 - [Example 2: Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md#example-2-sentence-similarity-ranked) 
 - [Example 3: Zero-shot similarity](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/README.md#example-3-zero-shot-similarity) 
+
+[Back to top](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md#translation-is-fun-by-the-power-of-graph-isomorphism)
