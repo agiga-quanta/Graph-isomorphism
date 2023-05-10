@@ -3,7 +3,9 @@
 This example shows a more detailed version of sentence similarity. However, we will also check the topic of inputs before filtering inputs with filter topics, and comparing only the relevant inputs to the main input. 
 ## Method:
 Model used is: [bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli)  
-In this specific example, we know 'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration' are our main focus from the first input. We are also only interested in 'society', 'association', 'partnership', 'community' sources only, so anything from 'food', 'news', 'sport', 'culture', 'politics', 'business' will be ignored.  
+
+In this specific example, we know `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'` are our main focus from the first input. We are also only interested in `'society', 'association', 'partnership', 'community'` sources only, so anything from `'food', 'news', 'sport', 'culture', 'politics', 'business'` will be ignored.  
+
 The method here used zero-shot-classification pipeline, which in specific uses bart-large-mnli model from Facebook, to calculate the topic similarity to filter topics such as `'society', 'association', 'partnership', 'community', 'food', 'news', 'sport', 'culture', 'politics', 'business'` before comparing them to `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'`.  
 ## File: [Zero_shot_classification.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/zero_shot_classification.ipynb)
 ## Instructions and explanation: 
