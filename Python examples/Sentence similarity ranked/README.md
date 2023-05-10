@@ -1,7 +1,7 @@
-## Example 2: Sentence similarity ranked
-### Purpose:
+# Example 2: Sentence similarity ranked
+## Purpose:
 This example shows a similarity match score based on given inputs. You provide the sentences, and by running the code below, the model will output a similarity score between each inputs. In more details compare to the previous example, here we will compare all other inputs to the first one only.  
-### Method: 
+## Method: 
 Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6)
 
 The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information.   
@@ -9,8 +9,8 @@ The method first encodes all input sentences. The results are value vectors calc
 After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed.  
 
 After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score.  
-### File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
-### Instructions and explanation: 
+## File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
+## Instructions and explanation: 
 
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/After%20running.png">

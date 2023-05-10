@@ -41,7 +41,7 @@ Finally, we sort them with the `sorted` function, based on the first value in th
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Aggregate%20and%20print.png">
 
 The final results are seen in pairs such as below, and their scores are underneath each pairs.   
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20similarity.png"> 
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20similarity.png"> 
 
 Note that the order we have shown here on our screen is a descending order.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20rank.png">
