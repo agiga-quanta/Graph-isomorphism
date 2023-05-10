@@ -6,7 +6,7 @@ Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-emb
 The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information. 
 After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed. 
 After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score.
-### File:
+### File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
 ### Instructions and explanation: 
 (pip install)
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example. 
