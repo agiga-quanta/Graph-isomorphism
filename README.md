@@ -1,5 +1,11 @@
 # Translation is fun, by the power of graph isomorphism
 
+A guide youtube video playlist  will also be available soon.
+
+In this outlines, we have 3 examples to show, click on each to be directed there:
+- [Example 1: Sentence similarity pairs](https://github.com/agiga-quanta/Translation-is-fun#example-1-sentence-similarity-pairs)
+- [Example 2: Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun#example-2-sentence-similarity-ranked) 
+- [Example 3:](https://github.com/agiga-quanta/Translation-is-fun#example-3-zero-shot-similarity) 
 
 ## Example 1: Sentence similarity pairs
 ### Purpose:
