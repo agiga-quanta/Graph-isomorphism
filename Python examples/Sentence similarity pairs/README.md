@@ -27,23 +27,23 @@ We select the model `flax-sentence-embeddings/all_datasets_v4_MiniLM-L6` from hu
 6. [Alaska Salmon Season Officially Begins Next Week. Alaska’s first fresh salmon of the season always creates extreme interest for restaurant. Alaska’s 2023 salmon season officially gets underway on Monday, May 15 with the arrival of sockeyes and Chinook to the Copper River near Cordova. State fishery managers have announced there will be a 12-hour opener starting at 7am for the drift gillnet fleet. The 2023 Copper River sockeye salmon total run forecast is estimated at 1,646,000 fish, which is 14% below the 10-year average. That would produce a commercial harvest of 987,000 sockeye salmon for the season.](https://www.seafoodnews.com/Story/1252218/Alaska-Salmon-Season-Officially-Begins-Next-Week)
 7. [Lobster Fishery Halts as Buyers Stop Purchasing from Harvesters, Says FFAW. The lobster fishery has come to a screeching halt after buyers stopped purchasing product from harvesters. It’s the second closure in the fishery in a week according to FFAW Secretary-Treasurer, Jason Spingle. Spingle says the union’s phones have been ringing off the hook from irate fish harvesters unable to sell their catch, which is a live product. He says the provincial government needs to step in to resolve the matter. The lobster fishery has grown tremendously in recent years and the current price is set at $10.42 a pound. The union wants immediate action to amend legislation allowing harvesters to sell their product outside the province. He says they want to allow buyers with valid licences from Nova Scotia, New Brunswick or Maine to come in and buy lobster from harvesters at the prices set in this province.](https://vocm.com/2023/05/04/lobster-fishery-halts-as-buyers-stop-purchasing-from-harvesters-says-ffaw/)
 8. [What You’ll Need For The Best Baked Salmon. When it comes to salmon, don’t overthink it. All you really need is a simple lemon butter sauce and a sprinkle of herbs to make it super delicious. Salmon: You can make this with individual filets or one large piece (aka. half of a salmon). It works great either way! Butter: Keeps the salmon moist and adds that delicious buttery taste. Lemon Juice: A squeeze of lemon adds a bright and zesty touch. Garlic: I’m using 3 garlic cloves, but feel free to add more or less! Herbs: A parsley and dill combo complements the salmon perfectly.](https://downshiftology.com/recipes/best-baked-salmon/)  
-These are also shown in the pictures below. The sentences are enclosed in triple \" because they also have `newline` with them. To work without the triple \", you would have to put everything on one line.  
+These are also shown in the pictures below. The sentences are enclosed in triple \" because they also have `newline` with them. To work without the triple \", you would have to put everything on one line.    
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/image%20of%20model%20and%20input.png">
 
-With each step here, we first encode our sentences with `model.encode`. This will encode all inputs and give them a vector of values based on the encoding parameters of the model. 
+With each step here, we first encode our sentences with `model.encode`. This will encode all inputs and give them a vector of values based on the encoding parameters of the model.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Encode%20inputs.png">
 
-Because our inputs are now vectors of numerical values, we can perform a cosine similarity to find how similar they are. With a value closer to 1, they are highly similar, and closer to 0, they are less similar. This is calculated with `cos_sim` from `util` that we imported from `sentence_transformer` from the beginning.
+Because our inputs are now vectors of numerical values, we can perform a cosine similarity to find how similar they are. With a value closer to 1, they are highly similar, and closer to 0, they are less similar. This is calculated with `cos_sim` from `util` that we imported from `sentence_transformer` from the beginning.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Compute%20cosine.png">
 
-Now after we calculated, we aggregate them together into a list of sentences and similarity score.
-Finally, we sort them with the `sorted` function, based on the first value in the list - in this case is the similarity score - in descending order.
+Now after we calculated, we aggregate them together into a list of sentences and similarity score.  
+Finally, we sort them with the `sorted` function, based on the first value in the list - in this case is the similarity score - in descending order.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Aggregate%20and%20print.png">
 
-The final results are seen in pairs such as below, and their scores are underneath each pairs. 
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20similarity.png">
+The final results are seen in pairs such as below, and their scores are underneath each pairs.   
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20similarity.png"> 
 
-Note that the order we have shown here on our screen is a descending order.
+Note that the order we have shown here on our screen is a descending order.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20rank.png">
 
 [Next example: We would like to compare all sentences to our first one only, how do we do it? - Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md)
