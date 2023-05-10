@@ -7,13 +7,13 @@ In this specific example, we know 'conservation and stewardship', 'salmon enhanc
 The method here used zero-shot-classification pipeline, which in specific uses bart-large-mnli model from Facebook, to calculate the topic similarity to filter topics such as 'society', 'association', 'partnership', 'community', 'food', 'news', 'sport', 'culture', 'politics', 'business' before comparing them to 'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'. 
 ### File: [Zero_shot_classification.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/zero_shot_classification.ipynb)
 ### Instructions and explanation: 
-(pip install)
+
 We are using Jupyter notebook here, which allows us to run pip to install `transformers[pytorch]`. This package is necessary for using the model in this example.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Pip%20install%20pytorch.png">
 
-(importing pandas, tabluate and pipeline)
 We will be installing pandas to set up a tabular format and tabluate to visually show us tables in the results when we print them. Here we set up our `zero-shot-classification` pipeline, as well as the model to be `facebook/bart-large-mnli`
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Create%20data%20frame%20and%20table%20format.png">
 
-(image of model selection, as well as where to put input)
 The following sentences from these sources, same as the previous examples:
 1. [Our strategy aims to stem the steep decline of many Pacific salmon populations and to protect and rebuild stocks where possible by implementing a series of immediate and long-term solutions that focus on 4 key areas: conservation and stewardship, salmon enhancement, harvest transformation, integration and collaboration.](https://www.dfo-mpo.gc.ca/campaign-campagne/pss-ssp/index-eng.html)
 2. [The Adams River Salmon Society is run by a volunteer board of directors who are elected by the membership at the Annual General Meeting. Our Mission: To promote the conservation of wild salmon and the cultural resources of Tsútswecw Provincial Park through education and interpretation. Our Vision: An interpretive facility has been developed to help visitors to appreciate and understand the ecology of the salmon and the environment. The Interpretive Centre plays an important role in the regional economy by attracting people to the area and providing recreational opportunities that enhance the quality of life for residents and visitors. Additionally, the Society has been working with our partners on the restoration of the former overflow parking lot, which began with the planting of over 1,000 tree seedlings in the spring of 2010. Each year the Society takes on other projects to help with fulfilling our mandate to encourage and facilitate the education and conservation of the natural and cultural resources of Tsútswecw Provincial Park](https://www.salmonsociety.com/salmon-society/about/) 
@@ -25,10 +25,12 @@ The following sentences from these sources, same as the previous examples:
 8. [What You’ll Need For The Best Baked Salmon. When it comes to salmon, don’t overthink it. All you really need is a simple lemon butter sauce and a sprinkle of herbs to make it super delicious. Salmon: You can make this with individual filets or one large piece (aka. half of a salmon). It works great either way! Butter: Keeps the salmon moist and adds that delicious buttery taste. Lemon Juice: A squeeze of lemon adds a bright and zesty touch. Garlic: I’m using 3 garlic cloves, but feel free to add more or less! Herbs: A parsley and dill combo complements the salmon perfectly.](https://downshiftology.com/recipes/best-baked-salmon/)
 These are also shown in the pictures below. The sentences are enclosed in triple \" because they also have `newline` with them. To work without the triple \" and with a single \' or \", you would have to put everything on one line. 
 
-(Code running)
-Since we have dataframe and tables set up from above, we can simply use a loop such as above to run our similarity score calculations. We first print the sentence we are checking. Then we define the filter topics: 'society', 'association', 'partnership', 'community', 'food', 'news', 'sport', 'culture', 'politics', 'business'; before we use the classifier (which is the pipeline and the model). In essence, we are running the sentence through the pipeline, while using the model to classify right here. 
+Since we have dataframe and tables set up from above, we can simply use a loop such as above to run our similarity score calculations. We first print the sentence we are checking. Then we define the filter topics: `'society', 'association', 'partnership', 'community', 'food', 'news', 'sport', 'culture', 'politics', 'business'`; before we use the classifier (which is the pipeline and the model). In essence, we are running the sentence through the pipeline, while using the model to classify right here. 
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Zeroshot%20code.png">
+
 Afterward, we print the outputs and they will be in a table format such as below
-(Show table of filter topics)
-After the table, we then check for the outputs. By setting our conditions to `outputs['labels'][0] in ['society', 'association', 'partnership', 'community']:` we are checking if any of these topics has a score closer to 1 than 0, then it will run another classifying process just like before, but this time, the topic is more specific: 'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration' 
-(Show the table of final topics)
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Classify%201%20step.png">
+
+After this table, the code then check the outputs. By setting our conditions to `outputs['labels'][0] in ['society', 'association', 'partnership', 'community']:` we are checking if any of these topics has a score closer to 1 than 0, then it will run another classifying process just like before, but this time, the topic is more specific: 'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration' 
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Classify%202%20step.png">
 

@@ -32,10 +32,15 @@ These are also shown in the pictures below. The sentences are enclosed in triple
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/image%20of%20model%20and%20input.png">
 
 With each step here, we first encode our sentences with `model.encode`. This will encode all inputs and give them a vector of values based on the encoding parameters of the model. 
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Encoding%20ranked.png">
 
-
-(Compute cosine similarity)
 Because our inputs are now vectors of numerical values, we can perform a cosine similarity to find how similar they are. With a value closer to 1, they are highly similar, and closer to 0, they are less similar. This is calculated with `cos_sim` from `util` that we imported from `sentence_transformer` from the beginning.
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Compute%20cosine.png">
 
-(Add all pairs and sort)
 Now after we calculated, we aggregate them together into a list of sentences and similarity score. Note our difference here compare to the first example is that we are only appending the ones compared with the first sentence only (showed as `cos_sim[0][i]`, instead of `cos_sim[i][i]`). Finally, we sort them with the `sorted` function, based on the first value in the list - in this case is the similarity score - in descending order.
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Import%20sentence%20transformer%20and%20util.png">
+
+The final product will look like below, 
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20ranked.png">
+
+[Next example: We would like to classify our sentences, and then compare the similarity to certain topics we want. How do we do it? - using a zero-shot pipeline, with FB bart model! ](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/README.md)
