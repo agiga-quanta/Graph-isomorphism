@@ -2,7 +2,7 @@
 ## Purpose: 
 This example shows a more detailed version of sentence similarity. However, we will also check the topic of inputs before filtering inputs with filter topics, and comparing only the relevant inputs to the main input. 
 ## Method:
-Model used is: [bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli)  
+Model used is: [bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli).  
 
 In this specific example, we know `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'` are our main focus from the first input. We are also only interested in `'society', 'association', 'partnership', 'community'` sources only, so anything from `'food', 'news', 'sport', 'culture', 'politics', 'business'` will be ignored.  
 
@@ -25,7 +25,7 @@ We are using Jupyter notebook here, which allows us to run pip to install `trans
 pip install "transformers[pytorch]"
 ```
 
-We will be installing pandas to set up a tabular format and tabluate to visually show us tables in the results when we print them. Here we set up our `zero-shot-classification` pipeline, as well as the model to be `facebook/bart-large-mnli`
+We will be installing pandas to set up a tabular format and tabluate to visually show us tables in the results when we print them. Here we set up our `zero-shot-classification` pipeline, as well as the model to be `facebook/bart-large-mnli`.
 ```python
 from tabulate import tabulate
 import pandas as pd
@@ -121,8 +121,10 @@ for sentence in sentences:
     print_output(outputs)
 ```
 
-Afterward, we print the outputs and they will be in a table format such as below   
+Afterward, we print the outputs and they will be in a table format such as below.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Classify%201%20step.png">
 
-After this table, the code then check the outputs. By setting our conditions to `outputs['labels'][0] in ['society', 'association', 'partnership', 'community']:` we are checking if any of these topics has a score closer to 1 than 0, then it will run another classifying process just like before, but this time, the topic is more specific: `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'`   
+After this table, the code then check the outputs. By setting our conditions to `outputs['labels'][0] in ['society', 'association', 'partnership', 'community']:` we are checking if any of these topics has a score closer to 1 than 0, then it will run another classifying process just like before, but this time, the topic is more specific: `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'`.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Classify%202%20step.png">
+
+[Back to mainpage.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md)

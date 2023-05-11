@@ -4,21 +4,21 @@ A guide youtube video playlist have been posted [here](https://youtube.com/playl
 
 ## Preparation:
 We will be using `Google Colab` for the following examples. In order to access it, go to your browser and type the following:   
-`https://colab.research.google.com`
+`https://colab.research.google.com`.
 
 Once inside, you will be greeted with the home page, looks like the below screenshot:  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Landing%20Image.png">
 
-We can open a notebook right here, but for since the pop up will not launch everytime we land here at the page, we will be going the best way. Go to the top left corner, select `File` then `Upload notebook`  
+We can open a notebook right here, but for since the pop up will not launch everytime we land here at the page, we will be going the best way. Go to the top left corner, select `File` then `Upload notebook`.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/upload%20notebook.png">
 
-Here, you can select where you are uploading from. If your file is saved locally, you would select `Upload`, but since our file is stored on `Github`, we will be selected the `Github` tab. You can select which github repository you want to upload the notebook from by copy and paste their link here: `https://github.com/agiga-quanta/Translation-is-fun/tree/main/Python%20examples`  
+Here, you can select where you are uploading from. If your file is saved locally, you would select `Upload`, but since our file is stored on `Github`, we will be selected the `Github` tab. You can select which github repository you want to upload the notebook from by copy and paste their link here: `https://github.com/agiga-quanta/Translation-is-fun/tree/main/Python%20examples`.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Link%20to%20open%20projects.png">
 
-Then you can go to the right folder on the repository that has the notebook and upload it and open in a new tab by clicking on this icon  
+Then you can go to the right folder on the repository that has the notebook and upload it and open in a new tab by clicking on this icon.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Open%20in%20a%20new%20tab.png">
 
-This is how the notebook supposed to look like when you open it   
+This is how the notebook supposed to look like when you open it.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Notebook%20opening.png">
 
 Before running anything from a notebook, you will be given this warning, as the notebook is not made by Google. For our examples, you can just ignore this and click run anyway.  
@@ -39,4 +39,4 @@ In this repository, we currently have 3 examples to show, click on each to be di
 - [Example 2: Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md#example-2-sentence-similarity-ranked) 
 - [Example 3: Zero-shot similarity](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/README.md#example-3-zero-shot-similarity) 
 
-[Back to top](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md#translation-is-fun-by-the-power-of-graph-isomorphism)
+[Back to top.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md#translation-is-fun-by-the-power-of-graph-isomorphism)

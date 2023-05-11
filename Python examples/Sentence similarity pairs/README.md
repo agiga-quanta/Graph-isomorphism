@@ -4,7 +4,7 @@
 This example shows a similarity match score based on given inputs. You provide the sentences, and by running the code below, the model will output a similarity score between each inputs.   
 
 ## How to this example works: 
-Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6)   
+Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6).   
 
 The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information.  
 
@@ -144,4 +144,4 @@ The final results are seen in pairs such as below, and their scores are undernea
 Note that the order we have shown here on our screen is a descending order.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20rank.png">
 
-[Next example: We would like to compare all sentences to our first one only, how do we do it? - Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md)
+[Next example: We would like to compare all sentences to our first one only, how do we do it? - Sentence similarity ranked.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md)

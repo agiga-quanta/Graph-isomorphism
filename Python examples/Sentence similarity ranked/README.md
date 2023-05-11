@@ -2,7 +2,7 @@
 ## Purpose:
 This example shows a similarity match score based on given inputs. You provide the sentences, and by running the code below, the model will output a similarity score between each inputs. In more details compare to the previous example, here we will compare all other inputs to the first one only.  
 ## Method: 
-Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6)
+Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6).
 
 The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information.   
 
