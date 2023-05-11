@@ -1,6 +1,6 @@
 # Translation is fun, by the power of graph isomorphism
 
-A guide youtube video playlist  will also be available soon.
+A guide youtube video playlist have been posted [here](https://youtube.com/playlist?list=PL3KBtMOTv6gOPySRI3ppsEvmrtWGc6-VU). 
 
 ## Preparation:
 We will be using `Google Colab` for the following examples. In order to access it, go to your browser and type the following:   
