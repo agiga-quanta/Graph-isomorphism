@@ -14,10 +14,13 @@ After the calculations are completed, we aggregate the similarity score along wi
 
 ## How to try this for yourself without coding
 All our model are from `https://huggingface.co`. Copy this link into your browser to try out the models.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
 
-Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6), which calculates the similarity between sentences. 
+Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6), which calculates the similarity between sentences.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20page.png">
 
-On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check. 
+On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20test.png">
 
 ## File: [Sentence_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20pairs/Sentence_similarity_pairs.ipynb)
 
