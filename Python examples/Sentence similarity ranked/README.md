@@ -9,6 +9,18 @@ The method first encodes all input sentences. The results are value vectors calc
 After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed.  
 
 After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score.  
+
+## How to try this for yourself without coding
+All our model are from `https://huggingface.co`. Copy this link into your browser to try out the models.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
+
+Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6), which calculates the similarity between sentences.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20page.png">
+
+On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20test.png">
+
+
 ## File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
 ## Instructions and explanation: 
 
@@ -29,7 +41,7 @@ We select the model `flax-sentence-embeddings/all_datasets_v4_MiniLM-L6` from hu
 8. [What You’ll Need For The Best Baked Salmon. When it comes to salmon, don’t overthink it. All you really need is a simple lemon butter sauce and a sprinkle of herbs to make it super delicious. Salmon: You can make this with individual filets or one large piece (aka. half of a salmon). It works great either way! Butter: Keeps the salmon moist and adds that delicious buttery taste. Lemon Juice: A squeeze of lemon adds a bright and zesty touch. Garlic: I’m using 3 garlic cloves, but feel free to add more or less! Herbs: A parsley and dill combo complements the salmon perfectly.](https://downshiftology.com/recipes/best-baked-salmon/)  
 
 These are also shown in the pictures below. The sentences are enclosed in triple \" because they also have `newline` with them. To work without the triple \" and with a single \' or \", you would have to put everything on one line.   
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/image%20of%20model%20and%20input.png">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Models%20and%20inputs.png">
 
 With each step here, we first encode our sentences with `model.encode`. This will encode all inputs and give them a vector of values based on the encoding parameters of the model.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Encoding%20ranked.png">

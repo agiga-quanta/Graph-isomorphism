@@ -7,6 +7,16 @@ Model used is: [bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli
 In this specific example, we know `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'` are our main focus from the first input. We are also only interested in `'society', 'association', 'partnership', 'community'` sources only, so anything from `'food', 'news', 'sport', 'culture', 'politics', 'business'` will be ignored.  
 
 The method here used zero-shot-classification pipeline, which in specific uses bart-large-mnli model from Facebook, to calculate the topic similarity to filter topics such as `'society', 'association', 'partnership', 'community', 'food', 'news', 'sport', 'culture', 'politics', 'business'` before comparing them to `'conservation and stewardship', 'salmon enhancement', 'harvest transformation', 'integration and collaboration'`.  
+## How to try this for yourself without coding
+All our model are from `https://huggingface.co`. Copy this link into your browser to try out the models.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
+
+Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6), which calculates the similarity between sentences.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Bart%20model%20page.png">
+
+On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Bart%20model%20test.png">
+
 ## File: [Zero_shot_classification.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/zero_shot_classification.ipynb)
 ## Instructions and explanation: 
 
