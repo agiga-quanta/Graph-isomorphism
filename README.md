@@ -19,7 +19,7 @@ Then you can go to the right folder on the repository that has the notebook and 
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Open%20in%20a%20new%20tab.png">
 
 This is how the notebook supposed to look like when you open it.   
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Notebook%20opening.png">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Notebook%20open.png">
 
 Before running anything from a notebook, you will be given this warning, as the notebook is not made by Google. For our examples, you can just ignore this and click run anyway.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Warning%20before%20running%20codes.png">
