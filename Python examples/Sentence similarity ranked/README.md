@@ -41,7 +41,7 @@ We select the model `flax-sentence-embeddings/all_datasets_v4_MiniLM-L6` from hu
 8. [What You’ll Need For The Best Baked Salmon. When it comes to salmon, don’t overthink it. All you really need is a simple lemon butter sauce and a sprinkle of herbs to make it super delicious. Salmon: You can make this with individual filets or one large piece (aka. half of a salmon). It works great either way! Butter: Keeps the salmon moist and adds that delicious buttery taste. Lemon Juice: A squeeze of lemon adds a bright and zesty touch. Garlic: I’m using 3 garlic cloves, but feel free to add more or less! Herbs: A parsley and dill combo complements the salmon perfectly.](https://downshiftology.com/recipes/best-baked-salmon/)  
 
 These are also shown in the pictures below. The sentences are enclosed in triple \" because they also have `newline` with them. To work without the triple \" and with a single \' or \", you would have to put everything on one line.   
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Models%20and%20inputs.png">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20and%20inputs.png">
 
 With each step here, we first encode our sentences with `model.encode`. This will encode all inputs and give them a vector of values based on the encoding parameters of the model.   
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Encoding%20ranked.png">
