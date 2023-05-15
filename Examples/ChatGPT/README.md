@@ -75,4 +75,6 @@ Additionally, if we ask `ChatGPT` to repeat what it did to "Sentence #2" to "Sen
 
 It is because of these inconsistent throughout all of our inputs, we cannot reliably use `ChatGPT` to perform our tasks. 
 
+Click to view [Example 1: Sentence similarity pairs](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20pairs/README.md#example-1-sentence-similarity-pairs), where we try to solve our problem with a ML model from Hugging Face.
+
 [Back to mainpage.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md)
