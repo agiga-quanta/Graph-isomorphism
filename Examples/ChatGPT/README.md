@@ -3,20 +3,20 @@ Everyone knows about ChatGPT and since it is popular, we will try to get `ChatGP
 
 ## Step 1: Access ChatGPT
 This is the link to chat with `ChatGPT`. This is the `ChatGPT` version 3.5, with further updates to be able to help users communicate easier. 
-`https://chat.openai.com`
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
+`https://chat.openai.com`  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Log%20in%20sign%20up.png">
 
-At this point, you can log in or sign up with you Microsoft account or a Google acocunt. Once you are in you will be greeted with this page below. You can directly begin your conversations here. 
-(ChatGPT welcome page)
+At this point, you can log in or sign up with you Microsoft account or a Google acocunt. Once you are in you will be greeted with this page below. You can directly begin your conversations here.   
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/ChatGPT%20welcome%20page.png">
 
 Or you can review and continue an old conversations by selecting the conversations on the left side
 (ChatGPT with red circles)
 
 ## Step 2: Getting ChatGPT to compare sentences to fine sentence similarity.
 The image below shows a response from `ChatGPT` about getting a sentence similarity score. 
-(ChatGPT unable to rank)
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/ChatGPT%20unable%20to%20rank%20them%20in%20scores.png">
 
-As you have seen, `ChatGPT` will not score the similarity between the sentences. However, we can get ChatGPT to rank our sentences from the most similar to the least. This might be because of the limit of the model or something, but we cannot pass all 8 sentences into the chat and make it rank for us. Hence we have switched to call them sentence #1 to #8, with #1 being the one to compare to the rest:  
+As you have seen, `ChatGPT` will not score the similarity between the sentences. However, we can get ChatGPT to maybe rank our sentences from the most similar to the least. This might be possible if we overcome the limit of the model input.We cannot pass all 8 sentences into the chat and make it rank for us at once, so we have switched to call them sentence #1 to #8, with #1 being the one to compare to the rest:  
 
 > ### Sentence #1
 > Our strategy aims to stem the steep decline of many Pacific salmon populations and to protect and rebuild stocks where possible by implementing a series of immediate and long-term solutions that focus on 4 key areas: conservation and stewardship, salmon enhancement, harvest transformation, integration and collaboration.
@@ -35,24 +35,43 @@ As you have seen, `ChatGPT` will not score the similarity between the sentences.
 > ### Sentence #8
 > What You’ll Need For The Best Baked Salmon. When it comes to salmon, don’t overthink it. All you really need is a simple lemon butter sauce and a sprinkle of herbs to make it super delicious. Salmon: You can make this with individual filets or one large piece (aka. half of a salmon). It works great either way! Butter: Keeps the salmon moist and adds that delicious buttery taste. Lemon Juice: A squeeze of lemon adds a bright and zesty touch. Garlic: I’m using 3 garlic cloves, but feel free to add more or less! Herbs: A parsley and dill combo complements the salmon perfectly.
 
-In the end, `ChatGPT` could only rank them as below:
-(ChatGPT can rank)
+However, even with this approach, ChatGPT cannot rank the sentences we gave, and then proceed to produce its own sentences and rank those, seen below.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/ChatGPT%20can%20rank.png">
 
 ## Step 3: Classifying topics with ChatGPT
 
-In this step, `ChatGPT` shows problems with limited memory and being inconsistent. The below image shows `ChatGPT` problems with details:
+In this step, `ChatGPT` shows problems again with its limited memory and being inconsistent. The below image shows `ChatGPT` problems with details:
 ### Step 3.1: ChatGPT cannot remember inputs
-`ChatGPT` is unable to recall the content of inputs and thus recreate a different sentence to compile with request. At first, we thought it was the limit of input, and we might have exceeded it. However, Open AI did not reveal this information to public, and online searches ranges from 2000 to 4000 characters, so this would mean we have to split the sentences into different inputs. Even after splitting them into chunks, `ChatGPT` forgets it.
-(Chat GPT forgets again)
-We then defined the inputs, naming them as "Sentence" with numbers, `ChatGPT` still forgets about it after one query.
-(Chat GPT forgets)
-This means we would have to ask it to classify each sentence individually. However, we would encounter the next problem
-### Step 3.2: ChatGPT cannot do one thing consistently
-From the prompt below, where we asked it to classify only one sentence against the relevancy to the topics and rank them, `ChatGPT` cannot give consistent replies. 
-(Images of inconsistent output)
+`ChatGPT` is unable to recall the content of inputs and thus recreate a different sentence to compile with request. At first, we thought it was the limit of input, and we might have exceeded it. However, Open AI did not reveal this information to public, and online searches ranges from 2000 to 4000 characters, so this would mean we have to split the sentences into different inputs. Even after splitting them into chunks, `ChatGPT` forgets it.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/ChatGPT%20forgets%20again.png">
 
-It would have helped had the answers at least has the same number of rankings, but for "Sentence #1" it stuck to "Relevant" and "Not Relevant", and then for "Sentence #2", it gave us numbers from 0 to 4. However, if you ask it again, it will give us 1/5 to 4/5, such as the picture below.
-(Question 2)
+We then defined the inputs, naming them as "Sentence" with numbers, `ChatGPT` still forgets about it after one query.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Chat%20GPT%20forgets.png">
+
+This means we would have to ask it to classify each sentence individually. However, we would encounter the next problem
+
+### Step 3.2: ChatGPT cannot do one thing consistently
+From the prompt below, where we asked it to classify only one sentence against the relevancy to the topics and rank them, `ChatGPT` cannot give consistent replies.  
+Classifying Sentence #1  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20%231.png">
+
+`ChatGPT` only gave 2 types of outputs, "Relevant" and "Not Relevant".
+
+Classifying Sentence #2  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20%232.png">
+
+`ChatGPT` only gave 5 outputs, from 0 to 4. This is a lot more helpful.
+
+Classifying Sentence #3  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20%233.png">
+
+`ChatGPT` only gave 2 outputs, Relevant" and "Not Relevant".
+
+It would have helped had the answers at least has the same number of rankings, but for "Sentence #1" it stuck to "Relevant" and "Not Relevant", and then for "Sentence #2", it gave us numbers from 0 to 4. However, if you ask it again, it will give us 1/5 to 4/5, such as the picture below.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20%232%20again.png">
+
+Additionally, if we ask `ChatGPT` to repeat what it did to "Sentence #2" to "Sentence #3", we get this.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%202%20and%203.png">
 
 It is because of these inconsistent, we cannot reliably use `ChatGPT` to perform our tasks. 
 
