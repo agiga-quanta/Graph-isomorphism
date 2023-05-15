@@ -12,7 +12,7 @@ Once inside, you will be greeted with the home page, looks like the below screen
 We can open a notebook right here, but for since the pop up will not launch everytime we land here at the page, we will be going the best way. Go to the top left corner, select `File` then `Upload notebook`.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/upload%20notebook.png">
 
-Here, you can select where you are uploading from. If your file is saved locally, you would select `Upload`, but since our file is stored on `Github`, we will be selected the `Github` tab. You can select which github repository you want to upload the notebook from by copy and paste their link here: `https://github.com/agiga-quanta/Translation-is-fun/tree/main/Python%20examples`.  
+Here, you can select where you are uploading from. If your file is saved locally, you would select `Upload`, but since our file is stored on `Github`, we will be selected the `Github` tab. You can select which github repository you want to upload the notebook from by copy and paste their link here: `https://github.com/agiga-quanta/Translation-is-fun/tree/main/Examples`.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Link%20to%20open%20projects.png">
 
 Then you can go to the right folder on the repository that has the notebook and upload it and open in a new tab by clicking on this icon.  
@@ -35,8 +35,8 @@ Whenever you run a piece of code - it's called a `cell` in by notebook, you can 
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/After%20running.png">
 
 In this repository, we currently have 3 examples to show, click on each to be directed there:  
-- [Example 1: Sentence similarity pairs](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20pairs/README.md#example-1-sentence-similarity-pairs)
-- [Example 2: Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md#example-2-sentence-similarity-ranked) 
-- [Example 3: Zero-shot similarity](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/README.md#example-3-zero-shot-similarity) 
+- [Example 1: Sentence similarity pairs](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20pairs/README.md#example-1-sentence-similarity-pairs)
+- [Example 2: Sentence similarity ranked](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20ranked/README.md#example-2-sentence-similarity-ranked) 
+- [Example 3: Zero-shot similarity](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Zero%20shot%20classification/README.md#example-3-zero-shot-similarity) 
 
 [Back to top.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/README.md#translation-is-fun-by-the-power-of-graph-isomorphism)

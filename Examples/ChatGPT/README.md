@@ -4,7 +4,7 @@ Everyone knows about ChatGPT and since it is popular, we will try to get `ChatGP
 ## Step 1: Access ChatGPT
 This is the link to chat with `ChatGPT`. This is the `ChatGPT` version 3.5, with further updates to be able to help users communicate easier. 
 `https://chat.openai.com`
-(Log in sign up)
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
 
 At this point, you can log in or sign up with you Microsoft account or a Google acocunt. Once you are in you will be greeted with this page below. You can directly begin your conversations here. 
 (ChatGPT welcome page)

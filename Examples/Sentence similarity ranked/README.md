@@ -21,7 +21,7 @@ On the right side, you can find an interface API where you can try out any sente
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20test.png">
 
 
-## File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
+## File: [Sentence_similarity_ranked.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20ranked/Sentence_similarity_ranked.ipynb)
 ## Instructions and explanation: 
 
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
@@ -138,4 +138,4 @@ for score, i in all_sentence_combinations:
 The final product will look like below,  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20ranked.png">
 
-[Next example: We would like to classify our sentences, and then compare the similarity to certain topics we want. How do we do it? - using a zero-shot pipeline, with FB bart model! ](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/README.md)
+[Next example: We would like to classify our sentences, and then compare the similarity to certain topics we want. How do we do it? - using a zero-shot pipeline, with FB bart model! ](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Zero%20shot%20classification/README.md)

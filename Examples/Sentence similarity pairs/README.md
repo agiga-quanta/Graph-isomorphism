@@ -22,7 +22,7 @@ Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-se
 On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check. These scores means how similar the sentences are.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20test.png">
 
-## File: [Sentence_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20pairs/Sentence_similarity_pairs.ipynb)
+## File: [Sentence_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20pairs/Sentence_similarity_pairs.ipynb)
 
 ## Instructions and explanation: 
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
@@ -144,4 +144,4 @@ The final results are seen in pairs such as below, and their scores are undernea
 Note that the order we have shown here on our screen is a descending order.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Sentence%20pair%20rank.png">
 
-[Next example: We would like to compare all sentences to our first one only, how do we do it? - Sentence similarity ranked.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Sentence%20similarity%20ranked/README.md)
+[Next example: We would like to compare all sentences to our first one only, how do we do it? - Sentence similarity ranked.](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20ranked/README.md)

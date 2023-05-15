@@ -17,7 +17,7 @@ Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-se
 On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "I have a problem with my iphone that needs to be resolved asap!!", and we add the "class names" - also called topic in this example - "urgent, not urgent, phone, tablet, computer". By clicking "Compute", we can get the topic relativity score to check. These scores means how relavant to the topic a sentence is.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Bart%20model%20test.png">
 
-## File: [Zero_shot_classification.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Python%20examples/Zero%20shot%20classification/zero_shot_classification.ipynb)
+## File: [Zero_shot_classification.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Zero%20shot%20classification/zero_shot_classification.ipynb)
 ## Instructions and explanation: 
 
 We are using Jupyter notebook here, which allows us to run pip to install `transformers[pytorch]`. This package is necessary for using the model in this example.  
