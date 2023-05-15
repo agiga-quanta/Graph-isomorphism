@@ -13,7 +13,7 @@ We can open a notebook right here, but for since the pop up will not launch ever
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/upload%20notebook.png">
 
 Here, you can select where you are uploading from. If your file is saved locally, you would select `Upload`, but since our file is stored on `Github`, we will be selected the `Github` tab. You can select which github repository you want to upload the notebook from by copy and paste their link here: `https://github.com/agiga-quanta/Translation-is-fun/tree/main/Examples`.  
-<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Link%20to%20open%20projects.png">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Github%20link%20to%20open%20project.png">
 
 Then you can go to the right folder on the repository that has the notebook and upload it and open in a new tab by clicking on this icon.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Open%20in%20a%20new%20tab.png">
