@@ -51,6 +51,10 @@ from google.colab import drive
 drive.mount("/content/drive")
 ```
 
+When connecting to Google Drive, you could be prompted to give permission to connect. Here, simply allow `Connect to Google Drive` and then select the account that has the data file. If Jupyter notebook is unable to connect, check if you have VPN restriction on.  
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/twitter%20roberta%20example.png">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/twitter%20roberta%20example.png">
+
 And since our data is not at the homepage of our google drive, we will have to change the directory.
 ```
 cd drive/MyDrive/TIS
