@@ -1,18 +1,18 @@
 # Example 4: Applying sentence similarity and sentence sentiment analysis on Nused dataset
 
 ## Purpose of this example:
-This example shows a sentence similarity match score based on comments in the given dataset. We are looking for how similar comments could lead to similar sentiments - similar comments expressing similar opinions. Appreciations and thankfulness to Tomas Bird for providing the data. A note on outputs in this example, the result of this similarity is currently output as text files that contain the comments and their scores. The [Nused_similarity_pairs.txt]() contains roughly 9.9 millions rows of comments and scores, because underlying it is choosing two comments from about 4536 unique comments. The other result file [Nused_sentiment.txt](), however, only contains 4536 rows of comments and their respective sentiment analysis score, as well as a label for their tone. 
+This example shows a sentence similarity match score based on comments in the given dataset. We are looking for how similar comments could lead to similar sentiments - similar comments expressing similar opinions. Appreciations and thankfulness to Tomas Bird for providing the data. A note on outputs in this example, the result of this similarity is currently output as text files that contain the comments and their scores. The [Nused_similarity_pairs.txt](https://drive.google.com/file/d/17TMnCqH9Ls-Woap5741_dokf_rILQWlF/view?usp=share_link) contains roughly 9.9 millions rows of comments and scores, because underlying it is choosing two comments from about 4536 unique comments. Due to file size, this file is hosted on google drive instead of on github. The other result file [Nused_sentiment.txt](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/nused_senti_result.txt), however, only contains 4536 rows of comments and their respective sentiment analysis score, as well as a label for their tone. 
 
 ## How this example works: 
 ### 1. Similarity analysis: 
 Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6).   
 
-The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information. After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed. After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score and due to the size of the output, written the output to [Nused_similarity_pairs.txt]().  
+The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information. After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed. After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score and due to the size of the output, written the output to [Nused_similarity_pairs.txt](https://drive.google.com/file/d/17TMnCqH9Ls-Woap5741_dokf_rILQWlF/view?usp=share_link). Due to file size, this file is hosted on google drive instead of on github.  
 
 ### 2. Sentiment analysis:
 Model used is: [cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest)
 
-The model can be used directly on an input. In our case, we will sort our inputs into a list, where we can then iteratively run every inputs through the model. After running them through, the model will give a label (`positive`, `neutral`, or `negative`), as well as a score to how close it is to the label. After running the calculation, the result list of comments, labels and scores is written to [Nused_sentiment.txt]().
+The model can be used directly on an input. In our case, we will sort our inputs into a list, where we can then iteratively run every inputs through the model. After running them through, the model will give a label (`positive`, `neutral`, or `negative`), as well as a score to how close it is to the label. After running the calculation, the result list of comments, labels and scores is written to [Nused_sentiment.txt](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/nused_senti_result.txt).
 
 ## How to try this for yourself without coding:
 ### 1. Similarity analysis:
@@ -120,6 +120,15 @@ with open('nused_pair_result.txt', 'w') as f:
         f.write("{} | {} | {:.4f}\n".format(comments_list_unique[i], comments_list_unique[j], cos_sim[i][j]))
 ```
 
+The results looks like below, where comments are separated with a | symbol, follow by their score.
+```
+Snorkel surveys conducted 2011-10-19. Poor survey conditions: 80% population observed and 42% observer efficiency. | Snorkel surveys conducted 2011-10-19. Poor survey conditions: 80% population observed and 49% observer efficiency. | 0.9988
+
+Snorkel surveys conducted 2013-09-12; 2013-09-19; 2013-09-27; 2013-10-04; 2013-10-10; 2013-10-17 & 2013-11-01. | Snorkel surveys conducted 2013-09-06; 2013-09-18; 2013-10-04; 2013-10-17; 2013-10-26; 2013-11-01 & 2013-11-17. | 0.9987
+
+Bank & stream walk conducted 2014-09-29. Only one survey done in 2014. No Chinook were observed. | Bank & stream walk conducted 2014-09-30. Only one survey done in 2014. No Chinook were observed. | 0.9991
+```
+
 
 ### 2. Sentiment analysis:
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
@@ -194,4 +203,11 @@ Last but not least, our result will be written out for further usage.
 with open('nused_senti_result.txt', 'w') as f:
     for i in comment_range:
         f.write("{} | {} | {}\n".format(comments_list_sentiment[i]['comment'], comments_list_sentiment[i]['label'], comments_list_sentiment[i]['score']))
+```
+
+The results looks like below, where comments are separated with a | symbol, follow by their score.
+```
+One survey on 09/30. First survey in Ououkinsh River in several years and minimal historical data available. | neutral | 0.8855693340301514
+Snorkel survey 2011-10-28, poor survey conditions. 20% of population observed and 18% observer efficiency so unexpanded LD+D used. | negative | 0.842688262462616
+Surveyed by Gord Bainbridge, Charter Patrol. First survey was peak observed. This AUC estimate should be considered an index. | neutral | 0.9253084659576416
 ```
