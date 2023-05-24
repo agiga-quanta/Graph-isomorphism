@@ -4,18 +4,18 @@
 This example shows a sentence similarity match score based on comments in the given dataset. We are looking for how similar comments could lead to similar sentiments - similar comments expressing similar opinions. Appreciations and thankfulness to Tomas Bird for providing the data. A note on outputs in this example, the result of this similarity is currently output as text files that contain the comments and their scores. The [Nused_similarity_pairs.txt]() contains roughly 9.9 millions rows of comments and scores, because underlying it is choosing two comments from about 4536 unique comments. The other result file [Nused_sentiment.txt](), however, only contains 4536 rows of comments and their respective sentiment analysis score, as well as a label for their tone. 
 
 ## How this example works: 
-### Similarity analysis: 
+### 1. Similarity analysis: 
 Model used is: [miniLM-L6-H384-uncased](https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_MiniLM-L6).   
 
 The method first encodes all input sentences. The results are value vectors calculated based on the sentence's own semantic information. After encoding, we compute the Cosine similarity between them. In linear algebra, Cosine similarity is used to calculate the angle between vectors, thus finding the similarity in the sentences' values in this case. To interpret the result, a value closer to 1 means the angle between the vectors is small, hence high similarity. A value near 0 means low similarity. These value calculations are pretrained for the model, and cannot be changed. After the calculations are completed, we aggregate the similarity score along with the sentences for display at the end. We organized the aggregated results by their similarity score and due to the size of the output, written the output to [Nused_similarity_pairs.txt]().  
 
-### Sentiment analysis:
-Model used is: [cardiffnlp/twitter-roberta-base-sentiment-latest]()
+### 2. Sentiment analysis:
+Model used is: [cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest)
 
 The model can be used directly on an input. In our case, we will sort our inputs into a list, where we can then iteratively run every inputs through the model. After running them through, the model will give a label (`positive`, `neutral`, or `negative`), as well as a score to how close it is to the label. After running the calculation, the result list of comments, labels and scores is written to [Nused_sentiment.txt]().
 
 ## How to try this for yourself without coding:
-### Similarity analysis:
+### 1. Similarity analysis:
 All our model are from `https://huggingface.co`. Copy this link into your browser to try out the models.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
 
@@ -25,20 +25,20 @@ Our model that we use is [miniLM-L6-H384-uncased](https://huggingface.co/flax-se
 On the right side, you can find an interface API where you can try out any sentences. In the picture below, we tried "That is a happy person" with other sentences such as "That is a happy dog", "That is a very happy person", "Today is a sunny day". By clicking "Compute", we can get the similarity score to check. These scores means how similar the sentences are.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Model%20test.png">
 
-### Sentiment analysis:
+### 2. Sentiment analysis:
 All our model are from `https://huggingface.co`. Copy this link into your browser to try out the models.  
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
 
 Our model that we use is [twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), which calculates the sentiment of inputs.  
 <img width="640" alt="image" src="">
 
-On the right side, you can find an interface API where you can try out any sentences. The example here is "Covid cases are increasing fast!" and the model gives the sentiment score below.
+On the right side, you can find an interface API where you can try out any sentences. The example here is "Covid cases are increasing fast!" and the model gives the sentiment score below.  
 <img width="640" alt="image" src="">
 
-## File: [Sentence_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/Sentence%20similarity%20pairs/Sentence_similarity_pairs.ipynb)
+## File: 1. [Nused_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/Nused_similarity_pairs.ipynb), 2. [Nused_sentiment.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/Nused_sentiment.ipynb)
 
 ## Instructions and explanation: 
-### Similarity analysis:
+### 1. Similarity analysis:
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
 ```
 pip install sentence-transformers
@@ -121,7 +121,7 @@ with open('nused_pair_result.txt', 'w') as f:
 ```
 
 
-### Sentiment analysis:
+### 2. Sentiment analysis:
 We are using Jupyter notebook here, which allows us to run pip to install `sentence_transformer` from hugging face. This package is necessary for using the model in this example.  
 ```
 pip install sentence-transformers;
