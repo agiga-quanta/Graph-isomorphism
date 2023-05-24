@@ -30,10 +30,10 @@ All our model are from `https://huggingface.co`. Copy this link into your browse
 <img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/Hugging%20face%20landing%20page.png">
 
 Our model that we use is [twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), which calculates the sentiment of inputs.  
-<img width="640" alt="image" src="">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/twitter%20roberta.png">
 
 On the right side, you can find an interface API where you can try out any sentences. The example here is "Covid cases are increasing fast!" and the model gives the sentiment score below.  
-<img width="640" alt="image" src="">
+<img width="640" alt="image" src="https://github.com/agiga-quanta/Translation-is-fun/blob/main/images/twitter%20roberta%20example.png">
 
 ## File: 1. [Nused_similarity_pairs.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/Nused_similarity_pairs.ipynb), 2. [Nused_sentiment.ipynb](https://github.com/agiga-quanta/Translation-is-fun/blob/main/Examples/NuSEDS/Nused_sentiment.ipynb)
 
